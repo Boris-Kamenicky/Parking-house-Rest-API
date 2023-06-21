@@ -1,0 +1,2569 @@
+updateCarPark
+
+→ Create new car park
+  [16. 6. 2022, 12:23:58]  POST http://localhost:8080/carparks  
+  404 Not Found ★ 36ms time ★ 439B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 96B
+  │ {
+  │   "id": 28319418,
+  │   "name": "Park1",
+  │   "address": "Address1",
+  │   "prices": 10,
+  │   "floors": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  35ms      10ms   7ms          1ms             6ms              10ms       802µs     72ms  
+
+  [12:23:58] 1. createAndSetCarParkId
+
+→ Update car park
+  [16. 6. 2022, 12:23:58]  PUT http://localhost:8080/carparks/  
+  404 Not Found ★ 6ms time ★ 431B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 88B
+  │ {
+  │   "id": ,
+  │   "name": "Park2",
+  │   "address": "Address2",
+  │   "prices": 12,
+  │   "floors": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks/', does not exist.</div><div class="
+  │ footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       808µs   (cache)      (cache)         2ms              1ms        87µs      7ms   
+
+  [12:23:58] 2. getUpdatedCarPark
+
+→ Get carp park by id
+  [16. 6. 2022, 12:23:58]  GET http://localhost:8080/carparks/  
+  404 Not Found ★ 6ms time ★ 291B↑ 1.16kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks/', does not exist.</div><div class="
+  │ footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       560µs   (cache)      (cache)         3ms              1ms        60µs      7ms   
+
+  [12:23:58] 3. getUpdatedCarPark
+
+┌─────────────────────────┬───────────────────┬─────────────────┐
+│                         │          executed │          failed │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│              iterations │                 1 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│                requests │                 3 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│            test-scripts │                 6 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│      prerequest-scripts │                 3 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│              assertions │                 3 │               3 │
+├─────────────────────────┴───────────────────┴─────────────────┤
+│ total run duration: 463ms                                     │
+├───────────────────────────────────────────────────────────────┤
+│ total data received: 3.2kB (approx)                           │
+├───────────────────────────────────────────────────────────────┤
+│ average response time: 16ms [min: 6ms, max: 36ms, s.d.: 14ms] │
+├───────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 7ms [min: 7ms, max: 7ms, s.d.: 0µs]  │
+├───────────────────────────────────────────────────────────────┤
+│ average first byte time: 4ms [min: 2ms, max: 6ms, s.d.: 1ms]  │
+└───────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                                          
+                                                                                                     
+ 1.  JSONError       createAndSetCarParkId                                                           
+                     Unexpected token '<' at 1:1                                                     
+                     <html><head><title>Grizzly 3.0.0</title><style><!--div.header {font-family:Taho 
+                     ^                                                                               
+                     at assertion:0 in test-script                                                   
+                     inside "Create new car park"                                                    
+                                                                                                     
+ 2.  AssertionError  getUpdatedCarPark                                                               
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Update car park"                                                        
+                                                                                                     
+ 3.  AssertionError  getUpdatedCarPark                                                               
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Get carp park by id"                                                    
+
+-----------------------
+
+updateCarParkFloor
+
+→ Create new car park
+  [16. 6. 2022, 12:24:00]  POST http://localhost:8080/carparks  
+  404 Not Found ★ 27ms time ★ 440B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 97B
+  │ {
+  │    "id": 28319418,
+  │   "name": "Park1",
+  │   "address": "Address1",
+  │   "prices": 10,
+  │   "floors": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  35ms      9ms    2ms          793µs           5ms              8ms        580µs     62ms  
+
+  [12:24:00] 1. createAndSetCarParkId
+
+→ Create new car park floor for given car park
+  [16. 6. 2022, 12:24:00]  POST http://localhost:8080/carparks/{{carParkId}}/floors  
+  404 Not Found ★ 6ms time ★ 461B↑ 1.19kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 89B
+  │ {
+  │   "id": -1331359,
+  │   "identifier": "Floor1",
+  │   "carPark": {{carParkId}},
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks/%7B%7BcarParkId%7D%7D/floors', does 
+  │ not exist.</div><div class="footer">Grizzly 3.0.0</div
+  │ ></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       773µs   (cache)      (cache)         2ms              2ms        83µs      7ms   
+
+  [12:24:00] 2. createCarParkFloor
+
+→ Update car park floor
+  [16. 6. 2022, 12:24:00]  PUT http://localhost:8080/carparks/{{carParkId}}/floors/Floor1  
+  404 Not Found ★ 6ms time ★ 470B↑ 1.19kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 104B
+  │ {
+  │   "id": {{carParkFloorId}},
+  │   "identifier": "Floor2",
+  │   "carPark": {{carParkId}},
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks/%7B%7BcarParkId%7D%7D/floors/Floor1'
+  │ , does not exist.</div><div class="footer">Grizzly 3.0
+  │ .0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       452µs   (cache)      (cache)         3ms              1ms        63µs      7ms   
+
+  [12:24:00] 3. updateCarParkFloor
+
+→ Get car park floor that belongs to car park with given id and has given identifier Copy 2
+  [16. 6. 2022, 12:24:00]  GET http://localhost:8080/carparkFloors/{{carParkFloorId}}  
+  404 Not Found ★ 7ms time ★ 322B↑ 1.19kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparkFloors/%7B%7BcarParkFloorId%7D%7D', do
+  │ es not exist.</div><div class="footer">Grizzly 3.0.0</
+  │ div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       365µs   (cache)      (cache)         3ms              2ms        71µs      7ms   
+
+  [12:24:00] 4. getUpdatedCarParkFloor
+
+┌─────────────────────────┬───────────────────┬──────────────────┐
+│                         │          executed │           failed │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              iterations │                 1 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│                requests │                 4 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│            test-scripts │                 8 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│      prerequest-scripts │                 4 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              assertions │                 4 │                4 │
+├─────────────────────────┴───────────────────┴──────────────────┤
+│ total run duration: 558ms                                      │
+├────────────────────────────────────────────────────────────────┤
+│ total data received: 4.36kB (approx)                           │
+├────────────────────────────────────────────────────────────────┤
+│ average response time: 11ms [min: 6ms, max: 27ms, s.d.: 8ms]   │
+├────────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 2ms [min: 2ms, max: 2ms, s.d.: 0µs]   │
+├────────────────────────────────────────────────────────────────┤
+│ average first byte time: 3ms [min: 2ms, max: 5ms, s.d.: 945µs] │
+└────────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                                                             
+                                                                                                                        
+ 1.  JSONError       createAndSetCarParkId                                                                              
+                     Unexpected token '<' at 1:1                                                                        
+                     <html><head><title>Grizzly 3.0.0</title><style><!--div.header {font-family:Taho                    
+                     ^                                                                                                  
+                     at assertion:0 in test-script                                                                      
+                     inside "Create new car park"                                                                       
+                                                                                                                        
+ 2.  AssertionError  createCarParkFloor                                                                                 
+                     expected response to have status code 201 but got 404                                              
+                     at assertion:0 in test-script                                                                      
+                     inside "Create new car park floor for given car park"                                              
+                                                                                                                        
+ 3.  AssertionError  updateCarParkFloor                                                                                 
+                     expected response to have status code 200 but got 404                                              
+                     at assertion:0 in test-script                                                                      
+                     inside "Update car park floor"                                                                     
+                                                                                                                        
+ 4.  AssertionError  getUpdatedCarParkFloor                                                                             
+                     expected response to have status code 200 but got 404                                              
+                     at assertion:0 in test-script                                                                      
+                     inside "Get car park floor that belongs to car park with given id and has given identifier Copy 2" 
+
+-----------------------
+
+updateCarWithoutType
+
+→ Create user
+  [16. 6. 2022, 12:24:02]  POST http://localhost:8080/users  
+  404 Not Found ★ 24ms time ★ 463B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 122B
+  │ {
+  │   "id": -92119638,
+  │   "firstName": "Jozko",
+  │   "lastName": "Mkrvicka",
+  │   "email": "jozo.mrkvicka@stuba.sk",
+  │   "cars": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/users', does not exist.</div><div class="foot
+  │ er">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  31ms      8ms    2ms          831µs           5ms              7ms        463µs     56ms  
+
+  [12:24:02] 1. createUser
+
+→ Create car
+  [16. 6. 2022, 12:24:02]  POST http://localhost:8080/cars  
+  404 Not Found ★ 5ms time ★ 612B↑ 1.15kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 272B
+  │ {
+  │   "id": -47280362,
+  │   "brand": "Skoda",
+  │   "model": "Fabia",
+  │   "vrp": "BA111AA",
+  │   "owner": {
+  │     "id": {{userId}},
+  │     "firstName": "Jozko",
+  │     "lastName": "Mkrvicka",
+  │     "email": "jozo.mrkvicka@stuba.sk",
+  │     "cars": []
+  │   },
+  │   "colour": "Green",
+  │   "reservations": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars', does not exist.</div><div class="foote
+  │ r">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       717µs   (cache)      (cache)         2ms              1ms        71µs      6ms   
+
+  [12:24:02] 2. createCar
+
+→ Update car
+  [16. 6. 2022, 12:24:02]  PUT http://localhost:8080/cars/{{carId}}  
+  404 Not Found ★ 5ms time ★ 627B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 270B
+  │ {
+  │   "id": {{carId}},
+  │   "brand": "Ford",
+  │   "model": "Fiesta",
+  │   "vrp": "BA222AA",
+  │   "owner": {
+  │     "id": {{userId}},
+  │     "firstName": "Jozko",
+  │     "lastName": "Mkrvicka",
+  │     "email": "jozo.mrkvicka@stuba.sk",
+  │     "cars": []
+  │   },
+  │   "colour": "Red",
+  │   "reservations": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.08kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars/%7B%7BcarId%7D%7D', does not exist.</div
+  │ ><div class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       267µs   (cache)      (cache)         2ms              1ms        53µs      5ms   
+
+  [12:24:02] 3. updateCar
+
+→ Get car with id
+  [16. 6. 2022, 12:24:03]  GET http://localhost:8080/cars/{{carId}}  
+  404 Not Found ★ 4ms time ★ 304B↑ 1.17kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.08kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars/%7B%7BcarId%7D%7D', does not exist.</div
+  │ ><div class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       242µs   (cache)      (cache)         2ms              1ms        49µs      5ms   
+
+  [12:24:03] 4. getCar
+
+┌─────────────────────────┬──────────────────┬─────────────────┐
+│                         │         executed │          failed │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│              iterations │                1 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│                requests │                4 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│            test-scripts │                8 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│      prerequest-scripts │                4 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│              assertions │                4 │               4 │
+├─────────────────────────┴──────────────────┴─────────────────┤
+│ total run duration: 494ms                                    │
+├──────────────────────────────────────────────────────────────┤
+│ total data received: 4.29kB (approx)                         │
+├──────────────────────────────────────────────────────────────┤
+│ average response time: 9ms [min: 4ms, max: 24ms, s.d.: 8ms]  │
+├──────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 2ms [min: 2ms, max: 2ms, s.d.: 0µs] │
+├──────────────────────────────────────────────────────────────┤
+│ average first byte time: 3ms [min: 2ms, max: 5ms, s.d.: 1ms] │
+└──────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                
+                                                                           
+ 1.  AssertionError  createUser                                            
+                     expected response to have status code 201 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Create user"                                  
+                                                                           
+ 2.  AssertionError  createCar                                             
+                     expected response to have status code 201 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Create car"                                   
+                                                                           
+ 3.  AssertionError  updateCar                                             
+                     expected response to have status code 200 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Update car"                                   
+                                                                           
+ 4.  AssertionError  getCar                                                
+                     expected response to have status code 200 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Get car with id"                              
+
+-----------------------
+
+updateCarWithType
+
+→ Create user
+  [16. 6. 2022, 12:24:04]  POST http://localhost:8080/users  
+  404 Not Found ★ 26ms time ★ 463B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 122B
+  │ {
+  │   "id": -92119638,
+  │   "firstName": "Jozko",
+  │   "lastName": "Mkrvicka",
+  │   "email": "jozo.mrkvicka@stuba.sk",
+  │   "cars": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/users', does not exist.</div><div class="foot
+  │ er">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  35ms      8ms    2ms          871µs           5ms              8ms        509µs     62ms  
+
+  [12:24:05] 1. createUser
+
+→ Create car type Copy 2
+  [16. 6. 2022, 12:24:05]  POST http://localhost:8080/cartypes  
+  404 Not Found ★ 6ms time ★ 384B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 41B
+  │ {
+  │   "id": 2015878,
+  │   "name": "Electric"
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cartypes', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       873µs   (cache)      (cache)         2ms              1ms        83µs      7ms   
+
+  [12:24:05] 2. createCarType
+
+→ Create car
+  [16. 6. 2022, 12:24:05]  POST http://localhost:8080/cars  
+  404 Not Found ★ 6ms time ★ 683B↑ 1.15kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 343B
+  │ {
+  │   "id": -47280362,
+  │   "brand": "Skoda",
+  │   "model": "Fabia",
+  │   "vrp": "BA111AA",
+  │   "owner": {
+  │     "id": {{userId}},
+  │     "firstName": "Jozko",
+  │     "lastName": "Mkrvicka",
+  │     "email": "jozo.mrkvicka@stuba.sk",
+  │     "cars": []
+  │   },
+  │   "colour": "Green",
+  │   "reservations": [],
+  │   "type": {
+  │       "id": {{carTypeId}},
+  │       "name": "Electric"
+  │     }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars', does not exist.</div><div class="foote
+  │ r">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       637µs   (cache)      (cache)         2ms              2ms        81µs      8ms   
+
+  [12:24:05] 3. createCar
+
+→ Update car
+  [16. 6. 2022, 12:24:05]  PUT http://localhost:8080/cars/{{carId}}  
+  404 Not Found ★ 5ms time ★ 627B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 270B
+  │ {
+  │   "id": {{carId}},
+  │   "brand": "Ford",
+  │   "model": "Fiesta",
+  │   "vrp": "BA222AA",
+  │   "owner": {
+  │     "id": {{userId}},
+  │     "firstName": "Jozko",
+  │     "lastName": "Mkrvicka",
+  │     "email": "jozo.mrkvicka@stuba.sk",
+  │     "cars": []
+  │   },
+  │   "colour": "Red",
+  │   "reservations": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.08kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars/%7B%7BcarId%7D%7D', does not exist.</div
+  │ ><div class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       299µs   (cache)      (cache)         2ms              1ms        55µs      6ms   
+
+  [12:24:05] 4. updateCar
+
+→ Get car with id
+  [16. 6. 2022, 12:24:05]  GET http://localhost:8080/cars/{{carId}}  
+  404 Not Found ★ 6ms time ★ 304B↑ 1.17kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.08kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars/%7B%7BcarId%7D%7D', does not exist.</div
+  │ ><div class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       532µs   (cache)      (cache)         2ms              2ms        81µs      7ms   
+
+  [12:24:05] 5. getCar
+
+┌─────────────────────────┬──────────────────┬─────────────────┐
+│                         │         executed │          failed │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│              iterations │                1 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│                requests │                5 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│            test-scripts │               10 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│      prerequest-scripts │                5 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│              assertions │                5 │               5 │
+├─────────────────────────┴──────────────────┴─────────────────┤
+│ total run duration: 656ms                                    │
+├──────────────────────────────────────────────────────────────┤
+│ total data received: 5.35kB (approx)                         │
+├──────────────────────────────────────────────────────────────┤
+│ average response time: 9ms [min: 5ms, max: 26ms, s.d.: 8ms]  │
+├──────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 2ms [min: 2ms, max: 2ms, s.d.: 0µs] │
+├──────────────────────────────────────────────────────────────┤
+│ average first byte time: 3ms [min: 2ms, max: 5ms, s.d.: 1ms] │
+└──────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                
+                                                                           
+ 1.  AssertionError  createUser                                            
+                     expected response to have status code 201 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Create user"                                  
+                                                                           
+ 2.  AssertionError  createCarType                                         
+                     expected response to have status code 201 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Create car type Copy 2"                       
+                                                                           
+ 3.  AssertionError  createCar                                             
+                     expected response to have status code 201 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Create car"                                   
+                                                                           
+ 4.  AssertionError  updateCar                                             
+                     expected response to have status code 200 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Update car"                                   
+                                                                           
+ 5.  AssertionError  getCar                                                
+                     expected response to have status code 200 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Get car with id"                              
+
+-----------------------
+
+updateParkingSpotWithoutType
+
+→ Create new car park
+  [16. 6. 2022, 12:24:07]  POST http://localhost:8080/carparks  
+  404 Not Found ★ 27ms time ★ 439B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 96B
+  │ {
+  │   "id": 28319418,
+  │   "name": "Park1",
+  │   "address": "Address1",
+  │   "prices": 10,
+  │   "floors": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  35ms      9ms    2ms          848µs           5ms              8ms        507µs     62ms  
+
+  [12:24:07] 1. createAndSetCarParkId
+
+→ Create new car park floor for given car park
+  [16. 6. 2022, 12:24:07]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 7ms time ★ 427B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 76B
+  │ {
+  │   "id": -1331359,
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       1ms    (cache)      (cache)         2ms              2ms        85µs      9ms   
+
+
+→ Create new car park floor for given car park
+  [16. 6. 2022, 12:24:07]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 6ms time ★ 409B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 58B
+  │ {
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       356µs   (cache)      (cache)         2ms              2ms        78µs      7ms   
+
+
+→ Create parking spot for given car park and given car park floor
+  [16. 6. 2022, 12:24:07]  POST http://localhost:8080/carparks//floors/Floor1/spots  
+  404 Not Found ★ 5ms time ★ 491B↑ 1.18kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 126B
+  │ {
+  │   "id": -64207243,
+  │   "identifier": "1.01",
+  │   "carParkFloor": "Floor1",
+  │   "carPark": ,
+  │   "free": true,
+  │   "reservations": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.09kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors/Floor1/spots', does not exis
+  │ t.</div><div class="footer">Grizzly 3.0.0</div></body>
+  │ </html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       295µs   (cache)      (cache)         2ms              1ms        59µs      6ms   
+
+  [12:24:07] 2. createParkingSpotWithoutType
+
+→ Update parking spot
+  [16. 6. 2022, 12:24:07]  PUT http://localhost:8080/parkingspots/{{parkingSpotId}}  
+  404 Not Found ★ 6ms time ★ 507B↑ 1.19kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 134B
+  │ {
+  │   "id": {{parkingSpotId}},
+  │   "identifier": "1.02",
+  │   "carParkFloor": "Floor1",
+  │   "carPark": ,
+  │   "free": true,
+  │   "reservations": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/parkingspots/%7B%7BparkingSpotId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       507µs   (cache)      (cache)         2ms              2ms        55µs      7ms   
+
+  [12:24:07] 3. updateParkingSpotWithoutType
+
+→ Get parking spot by id
+  [16. 6. 2022, 12:24:07]  GET http://localhost:8080/parkingspots/{{parkingSpotId}}  
+  404 Not Found ★ 5ms time ★ 320B↑ 1.19kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/parkingspots/%7B%7BparkingSpotId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       284µs   (cache)      (cache)         2ms              1ms        64µs      6ms   
+
+  [12:24:08] 4. getUpdatedParkingSpotWithoutType
+
+┌─────────────────────────┬───────────────────┬──────────────────┐
+│                         │          executed │           failed │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              iterations │                 1 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│                requests │                 6 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│            test-scripts │                12 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│      prerequest-scripts │                 6 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              assertions │                 4 │                4 │
+├─────────────────────────┴───────────────────┴──────────────────┤
+│ total run duration: 758ms                                      │
+├────────────────────────────────────────────────────────────────┤
+│ total data received: 6.49kB (approx)                           │
+├────────────────────────────────────────────────────────────────┤
+│ average response time: 9ms [min: 5ms, max: 27ms, s.d.: 7ms]    │
+├────────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 2ms [min: 2ms, max: 2ms, s.d.: 0µs]   │
+├────────────────────────────────────────────────────────────────┤
+│ average first byte time: 3ms [min: 2ms, max: 5ms, s.d.: 916µs] │
+└────────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                                          
+                                                                                                     
+ 1.  JSONError       createAndSetCarParkId                                                           
+                     Unexpected token '<' at 1:1                                                     
+                     <html><head><title>Grizzly 3.0.0</title><style><!--div.header {font-family:Taho 
+                     ^                                                                               
+                     at assertion:0 in test-script                                                   
+                     inside "Create new car park"                                                    
+                                                                                                     
+ 2.  AssertionError  createParkingSpotWithoutType                                                    
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create parking spot for given car park and given car park floor"        
+                                                                                                     
+ 3.  AssertionError  updateParkingSpotWithoutType                                                    
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Update parking spot"                                                    
+                                                                                                     
+ 4.  AssertionError  getUpdatedParkingSpotWithoutType                                                
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Get parking spot by id"                                                 
+
+-----------------------
+
+updateParkingSpotWithType
+
+→ Create new car park
+  [16. 6. 2022, 12:24:09]  POST http://localhost:8080/carparks  
+  404 Not Found ★ 28ms time ★ 439B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 96B
+  │ {
+  │   "id": 28319418,
+  │   "name": "Park1",
+  │   "address": "Address1",
+  │   "prices": 10,
+  │   "floors": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  34ms      9ms    2ms          860µs           5ms              9ms        512µs     62ms  
+
+  [12:24:10] 1. createAndSetCarParkId
+
+→ Create new car park floor for given car park
+  [16. 6. 2022, 12:24:10]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 6ms time ★ 427B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 76B
+  │ {
+  │   "id": -1331359,
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       988µs   (cache)      (cache)         2ms              2ms        79µs      8ms   
+
+
+→ Create new car park floor for given car park
+  [16. 6. 2022, 12:24:10]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 5ms time ★ 409B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 58B
+  │ {
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       273µs   (cache)      (cache)         2ms              2ms        64µs      6ms   
+
+
+→ Create car type Copy
+  [16. 6. 2022, 12:24:10]  POST http://localhost:8080/cartypes  
+  404 Not Found ★ 5ms time ★ 384B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 41B
+  │ {
+  │   "id": 2015878,
+  │   "name": "Electric"
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cartypes', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       271µs   (cache)      (cache)         2ms              2ms        65µs      6ms   
+
+  [12:24:10] 2. createCarType
+
+→ Create parking spot for given car park and given car park floor
+  [16. 6. 2022, 12:24:10]  POST http://localhost:8080/carparks//floors/Floor1/spots  
+  404 Not Found ★ 5ms time ★ 561B↑ 1.18kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 196B
+  │ {
+  │   "id": -64207243,
+  │   "identifier": "1.01",
+  │   "carParkFloor": "Floor1",
+  │   "carPark": ,
+  │   "free": true,
+  │   "reservations": [],
+  │    "type": {
+  │       "id": {{carTypeId}},
+  │       "name": "Electric"
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.09kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors/Floor1/spots', does not exis
+  │ t.</div><div class="footer">Grizzly 3.0.0</div></body>
+  │ </html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       388µs   (cache)      (cache)         2ms              1ms        58µs      6ms   
+
+  [12:24:10] 3. createParkingSpotWithoutType
+
+→ Update parking spot
+  [16. 6. 2022, 12:24:10]  PUT http://localhost:8080/parkingspots/{{parkingSpotId}}  
+  404 Not Found ★ 5ms time ★ 577B↑ 1.19kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 204B
+  │ {
+  │   "id": {{parkingSpotId}},
+  │   "identifier": "1.02",
+  │   "carParkFloor": "Floor1",
+  │   "carPark": ,
+  │   "free": true,
+  │   "reservations": [],
+  │    "type": {
+  │       "id": {{carTypeId}},
+  │       "name": "Electric"
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/parkingspots/%7B%7BparkingSpotId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       262µs   (cache)      (cache)         2ms              1ms        58µs      5ms   
+
+  [12:24:10] 4. updateParkingSpotWithoutType
+
+→ Get parking spot by id
+  [16. 6. 2022, 12:24:10]  GET http://localhost:8080/parkingspots/{{parkingSpotId}}  
+  404 Not Found ★ 5ms time ★ 320B↑ 1.19kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/parkingspots/%7B%7BparkingSpotId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       269µs   (cache)      (cache)         2ms              1ms        47µs      5ms   
+
+  [12:24:10] 5. getUpdatedParkingSpotWithoutType
+
+┌─────────────────────────┬──────────────────┬─────────────────┐
+│                         │         executed │          failed │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│              iterations │                1 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│                requests │                7 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│            test-scripts │               14 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│      prerequest-scripts │                7 │               0 │
+├─────────────────────────┼──────────────────┼─────────────────┤
+│              assertions │                5 │               5 │
+├─────────────────────────┴──────────────────┴─────────────────┤
+│ total run duration: 887ms                                    │
+├──────────────────────────────────────────────────────────────┤
+│ total data received: 7.56kB (approx)                         │
+├──────────────────────────────────────────────────────────────┤
+│ average response time: 8ms [min: 5ms, max: 28ms, s.d.: 7ms]  │
+├──────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 2ms [min: 2ms, max: 2ms, s.d.: 0µs] │
+├──────────────────────────────────────────────────────────────┤
+│ average first byte time: 3ms [min: 2ms, max: 5ms, s.d.: 1ms] │
+└──────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                                          
+                                                                                                     
+ 1.  JSONError       createAndSetCarParkId                                                           
+                     Unexpected token '<' at 1:1                                                     
+                     <html><head><title>Grizzly 3.0.0</title><style><!--div.header {font-family:Taho 
+                     ^                                                                               
+                     at assertion:0 in test-script                                                   
+                     inside "Create new car park"                                                    
+                                                                                                     
+ 2.  AssertionError  createCarType                                                                   
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create car type Copy"                                                   
+                                                                                                     
+ 3.  AssertionError  createParkingSpotWithoutType                                                    
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create parking spot for given car park and given car park floor"        
+                                                                                                     
+ 4.  AssertionError  updateParkingSpotWithoutType                                                    
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Update parking spot"                                                    
+                                                                                                     
+ 5.  AssertionError  getUpdatedParkingSpotWithoutType                                                
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Get parking spot by id"                                                 
+
+-----------------------
+
+updateReservationWithoutType
+
+→ Create new car park Copy
+  [16. 6. 2022, 12:24:12]  POST http://localhost:8080/carparks  
+  404 Not Found ★ 26ms time ★ 455B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 96B
+  │ {
+  │   "id": 28319418,
+  │   "name": "Park1",
+  │   "address": "Address1",
+  │   "prices": 10,
+  │   "floors": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  38ms      9ms    2ms          903µs           4ms              7ms        485µs     64ms  
+
+  [12:24:12] 1. createAndSetCarParkId
+
+→ Create new car park floor for given car park Copy
+  [16. 6. 2022, 12:24:12]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 7ms time ★ 443B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 76B
+  │ {
+  │   "id": -1331359,
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       1ms    (cache)      (cache)         2ms              2ms        87µs      9ms   
+
+
+→ Create new car park floor for given car park Copy
+  [16. 6. 2022, 12:24:12]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 5ms time ★ 425B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 58B
+  │ {
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       287µs   (cache)      (cache)         2ms              1ms        62µs      5ms   
+
+
+→ Create parking spot for given car park and given car park floor Copy
+  [16. 6. 2022, 12:24:13]  POST http://localhost:8080/carparks//floors/Floor1/spots  
+  404 Not Found ★ 5ms time ★ 507B↑ 1.18kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 126B
+  │ {
+  │   "id": -64207243,
+  │   "identifier": "1.01",
+  │   "carParkFloor": "Floor1",
+  │   "carPark": ,
+  │   "free": true,
+  │   "reservations": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.09kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors/Floor1/spots', does not exis
+  │ t.</div><div class="footer">Grizzly 3.0.0</div></body>
+  │ </html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       288µs   (cache)      (cache)         2ms              1ms        59µs      5ms   
+
+  [12:24:13] 2. createParkingSpotWithoutType
+
+→ Create user Copy
+  [16. 6. 2022, 12:24:13]  POST http://localhost:8080/users  
+  404 Not Found ★ 5ms time ★ 479B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 122B
+  │ {
+  │   "id": -92119638,
+  │   "firstName": "Jozko",
+  │   "lastName": "Mkrvicka",
+  │   "email": "jozo.mrkvicka@stuba.sk",
+  │   "cars": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/users', does not exist.</div><div class="foot
+  │ er">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       415µs   (cache)      (cache)         2ms              1ms        54µs      5ms   
+
+  [12:24:13] 3. createUser
+
+→ Create car Copy
+  [16. 6. 2022, 12:24:13]  POST http://localhost:8080/cars  
+  404 Not Found ★ 5ms time ★ 628B↑ 1.15kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 272B
+  │ {
+  │   "id": -47280362,
+  │   "brand": "Skoda",
+  │   "model": "Fabia",
+  │   "vrp": "BA111AA",
+  │   "owner": {
+  │     "id": {{userId}},
+  │     "firstName": "Jozko",
+  │     "lastName": "Mkrvicka",
+  │     "email": "jozo.mrkvicka@stuba.sk",
+  │     "cars": []
+  │   },
+  │   "colour": "Green",
+  │   "reservations": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars', does not exist.</div><div class="foote
+  │ r">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       275µs   (cache)      (cache)         2ms              1ms        65µs      5ms   
+
+  [12:24:13] 4. createCar
+
+→ Create new reservation Copy
+  [16. 6. 2022, 12:24:13]  POST http://localhost:8080/reservations  
+  404 Not Found ★ 5ms time ★ 992B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 628B
+  │ {
+  │   "id": -61316587,
+  │   "start": "2022-06-08T10:00:00",
+  │   "end": "2022-06-10T09:00:00",
+  │   "prices": 15,
+  │   "car": {
+  │     "id": {{carId}},
+  │     "brand": "Skoda",
+  │     "model": "Fabia",
+  │     "vrp": "BA111AA",
+  │     "owner": {
+  │       "id": {{userId}},
+  │       "firstName": "Jozko",
+  │       "lastName": "Mkrvicka",
+  │       "email": "jozo.mrkvicka@stuba.sk",
+  │       "cars": [
+  │         {
+  │           "id": {{carId}}
+  │         }
+  │       ]
+  │     },
+  │     "colour": "Green",
+  │     "reservations": []
+  │   },
+  │   "spot": {
+  │     "id": {{parkingSpotId}},
+  │     "identifier": "1.01",
+  │     "carParkFloor": "Floor1",
+  │     "carPark": ,
+  │     "free": false,
+  │     "reservations": []
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/reservations', does not exist.</div><div clas
+  │ s="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       271µs   (cache)      (cache)         2ms              1ms        49µs      5ms   
+
+  [12:24:13] 5. createReservation
+
+→ Update reservation
+  [16. 6. 2022, 12:24:13]  PUT http://localhost:8080/reservations/{{reservationId}}  
+  404 Not Found ★ 5ms time ★ 1.01kB↑ 1.19kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 622B
+  │ {
+  │   "id": {{reservationId}},
+  │   "start": "2022-06-08T10:00:00",
+  │   "end": null,
+  │   "prices":null,
+  │     "car": {
+  │     "id": {{carId}},
+  │     "brand": "Skoda",
+  │     "model": "Fabia",
+  │     "vrp": "BA111AA",
+  │     "owner": {
+  │       "id": {{userId}},
+  │       "firstName": "Jozko",
+  │       "lastName": "Mkrvicka",
+  │       "email": "jozo.mrkvicka@stuba.sk",
+  │       "cars": [
+  │         {
+  │           "id": {{carId}}
+  │         }
+  │       ]
+  │     },
+  │     "colour": "Green",
+  │     "reservations": []
+  │   },
+  │   "spot": {
+  │     "id": {{parkingSpotId}},
+  │     "identifier": "1.01",
+  │     "carParkFloor": "Floor1",
+  │     "carPark": ,
+  │     "free": false,
+  │     "reservations": []
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/reservations/%7B%7BreservationId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       376µs   (cache)      (cache)         2ms              1ms        44µs      5ms   
+
+  [12:24:13] 6. getReservation
+
+→ Get reservation by id Copy
+  [16. 6. 2022, 12:24:13]  GET http://localhost:8080/reservations/{{reservationId}}  
+  404 Not Found ★ 5ms time ★ 336B↑ 1.19kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/reservations/%7B%7BreservationId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       375µs   (cache)      (cache)         2ms              1ms        44µs      6ms   
+
+  [12:24:13] 7. getReservation
+
+┌─────────────────────────┬───────────────────┬──────────────────┐
+│                         │          executed │           failed │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              iterations │                 1 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│                requests │                 9 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│            test-scripts │                18 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│      prerequest-scripts │                 9 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              assertions │                 7 │                7 │
+├─────────────────────────┴───────────────────┴──────────────────┤
+│ total run duration: 1074ms                                     │
+├────────────────────────────────────────────────────────────────┤
+│ total data received: 9.69kB (approx)                           │
+├────────────────────────────────────────────────────────────────┤
+│ average response time: 7ms [min: 5ms, max: 26ms, s.d.: 6ms]    │
+├────────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 2ms [min: 2ms, max: 2ms, s.d.: 0µs]   │
+├────────────────────────────────────────────────────────────────┤
+│ average first byte time: 2ms [min: 2ms, max: 4ms, s.d.: 744µs] │
+└────────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                                          
+                                                                                                     
+ 1.  JSONError       createAndSetCarParkId                                                           
+                     Unexpected token '<' at 1:1                                                     
+                     <html><head><title>Grizzly 3.0.0</title><style><!--div.header {font-family:Taho 
+                     ^                                                                               
+                     at assertion:0 in test-script                                                   
+                     inside "Create new car park Copy"                                               
+                                                                                                     
+ 2.  AssertionError  createParkingSpotWithoutType                                                    
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create parking spot for given car park and given car park floor Copy"   
+                                                                                                     
+ 3.  AssertionError  createUser                                                                      
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create user Copy"                                                       
+                                                                                                     
+ 4.  AssertionError  createCar                                                                       
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create car Copy"                                                        
+                                                                                                     
+ 5.  AssertionError  createReservation                                                               
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create new reservation Copy"                                            
+                                                                                                     
+ 6.  AssertionError  getReservation                                                                  
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Update reservation"                                                     
+                                                                                                     
+ 7.  AssertionError  getReservation                                                                  
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Get reservation by id Copy"                                             
+
+-----------------------
+
+updateReservationWithType
+
+→ Create new car park Copy
+  [16. 6. 2022, 12:24:15]  POST http://localhost:8080/carparks  
+  404 Not Found ★ 33ms time ★ 455B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 96B
+  │ {
+  │   "id": 28319418,
+  │   "name": "Park1",
+  │   "address": "Address1",
+  │   "prices": 10,
+  │   "floors": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  36ms      9ms    8ms          1ms             5ms              7ms        506µs     69ms  
+
+  [12:24:15] 1. createAndSetCarParkId
+
+→ Create new car park floor for given car park Copy
+  [16. 6. 2022, 12:24:15]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 6ms time ★ 443B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 76B
+  │ {
+  │   "id": -1331359,
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       980µs   (cache)      (cache)         2ms              1ms        84µs      7ms   
+
+
+→ Create new car park floor for given car park Copy
+  [16. 6. 2022, 12:24:15]  POST http://localhost:8080/carparks//floors  
+  404 Not Found ★ 6ms time ★ 425B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 58B
+  │ {
+  │   "identifier": "Floor1",
+  │   "carPark": ,
+  │   "spots": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors', does not exist.</div><div 
+  │ class="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       408µs   (cache)      (cache)         3ms              2ms        89µs      8ms   
+
+
+→ Create car type Copy
+  [16. 6. 2022, 12:24:15]  POST http://localhost:8080/cartypes  
+  404 Not Found ★ 6ms time ★ 400B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 41B
+  │ {
+  │   "id": 2015878,
+  │   "name": "Electric"
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cartypes', does not exist.</div><div class="f
+  │ ooter">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       403µs   (cache)      (cache)         2ms              1ms        56µs      6ms   
+
+  [12:24:15] 2. createCarType
+
+→ Create parking spot for given car park and given car park floor Copy
+  [16. 6. 2022, 12:24:16]  POST http://localhost:8080/carparks//floors/Floor1/spots  
+  404 Not Found ★ 5ms time ★ 576B↑ 1.18kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 195B
+  │ {
+  │   "id": -64207243,
+  │   "identifier": "1.01",
+  │   "carParkFloor": "Floor1",
+  │   "carPark": ,
+  │   "free": true,
+  │   "reservations": [],
+  │   "type": {
+  │       "id": {{carTypeId}},
+  │       "name": "Electric"
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.09kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/carparks//floors/Floor1/spots', does not exis
+  │ t.</div><div class="footer">Grizzly 3.0.0</div></body>
+  │ </html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       351µs   (cache)      (cache)         2ms              1ms        53µs      6ms   
+
+  [12:24:16] 3. createParkingSpotWithType
+
+→ Create user Copy
+  [16. 6. 2022, 12:24:16]  POST http://localhost:8080/users  
+  404 Not Found ★ 6ms time ★ 479B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 122B
+  │ {
+  │   "id": -92119638,
+  │   "firstName": "Jozko",
+  │   "lastName": "Mkrvicka",
+  │   "email": "jozo.mrkvicka@stuba.sk",
+  │   "cars": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/users', does not exist.</div><div class="foot
+  │ er">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       354µs   (cache)      (cache)         2ms              2ms        89µs      7ms   
+
+  [12:24:16] 4. createUser
+
+→ Create car Copy
+  [16. 6. 2022, 12:24:16]  POST http://localhost:8080/cars  
+  404 Not Found ★ 5ms time ★ 697B↑ 1.15kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 341B
+  │ {
+  │   "id": -47280362,
+  │   "brand": "Skoda",
+  │   "model": "Fabia",
+  │   "vrp": "BA111AA",
+  │   "owner": {
+  │     "id": {{userId}},
+  │     "firstName": "Jozko",
+  │     "lastName": "Mkrvicka",
+  │     "email": "jozo.mrkvicka@stuba.sk",
+  │     "cars": []
+  │   },
+  │   "colour": "Green",
+  │   "reservations": [],
+  │   "type": {
+  │       "id": {{carTypeId}},
+  │       "name": "Electric"
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/cars', does not exist.</div><div class="foote
+  │ r">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       264µs   (cache)      (cache)         2ms              1ms        46µs      5ms   
+
+  [12:24:16] 5. createCar
+
+→ Create new reservation Copy
+  [16. 6. 2022, 12:24:16]  POST http://localhost:8080/reservations  
+  404 Not Found ★ 5ms time ★ 992B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 628B
+  │ {
+  │   "id": -61316587,
+  │   "start": "2022-06-08T10:00:00",
+  │   "end": "2022-06-10T09:00:00",
+  │   "prices": 15,
+  │   "car": {
+  │     "id": {{carId}},
+  │     "brand": "Skoda",
+  │     "model": "Fabia",
+  │     "vrp": "BA111AA",
+  │     "owner": {
+  │       "id": {{userId}},
+  │       "firstName": "Jozko",
+  │       "lastName": "Mkrvicka",
+  │       "email": "jozo.mrkvicka@stuba.sk",
+  │       "cars": [
+  │         {
+  │           "id": {{carId}}
+  │         }
+  │       ]
+  │     },
+  │     "colour": "Green",
+  │     "reservations": []
+  │   },
+  │   "spot": {
+  │     "id": {{parkingSpotId}},
+  │     "identifier": "1.01",
+  │     "carParkFloor": "Floor1",
+  │     "carPark": ,
+  │     "free": false,
+  │     "reservations": []
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.07kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/reservations', does not exist.</div><div clas
+  │ s="footer">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       391µs   (cache)      (cache)         2ms              1ms        51µs      6ms   
+
+  [12:24:16] 6. createReservation
+
+→ Update reservation
+  [16. 6. 2022, 12:24:16]  PUT http://localhost:8080/reservations/{{reservationId}}  
+  404 Not Found ★ 5ms time ★ 1.01kB↑ 1.19kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 622B
+  │ {
+  │   "id": {{reservationId}},
+  │   "start": "2022-06-08T10:00:00",
+  │   "end": null,
+  │   "prices":null,
+  │     "car": {
+  │     "id": {{carId}},
+  │     "brand": "Skoda",
+  │     "model": "Fabia",
+  │     "vrp": "BA111AA",
+  │     "owner": {
+  │       "id": {{userId}},
+  │       "firstName": "Jozko",
+  │       "lastName": "Mkrvicka",
+  │       "email": "jozo.mrkvicka@stuba.sk",
+  │       "cars": [
+  │         {
+  │           "id": {{carId}}
+  │         }
+  │       ]
+  │     },
+  │     "colour": "Green",
+  │     "reservations": []
+  │   },
+  │   "spot": {
+  │     "id": {{parkingSpotId}},
+  │     "identifier": "1.01",
+  │     "carParkFloor": "Floor1",
+  │     "carPark": ,
+  │     "free": false,
+  │     "reservations": []
+  │   }
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/reservations/%7B%7BreservationId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       457µs   (cache)      (cache)         2ms              1ms        43µs      6ms   
+
+  [12:24:16] 7. getReservation
+
+→ Get reservation by id Copy
+  [16. 6. 2022, 12:24:16]  GET http://localhost:8080/reservations/{{reservationId}}  
+  404 Not Found ★ 5ms time ★ 336B↑ 1.19kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.1kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/reservations/%7B%7BreservationId%7D%7D', does
+  │  not exist.</div><div class="footer">Grizzly 3.0.0</di
+  │ v></body></html>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       573µs   (cache)      (cache)         2ms              1ms        53µs      6ms   
+
+  [12:24:16] 8. getReservation
+
+┌─────────────────────────┬───────────────────┬──────────────────┐
+│                         │          executed │           failed │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              iterations │                 1 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│                requests │                10 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│            test-scripts │                20 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│      prerequest-scripts │                10 │                0 │
+├─────────────────────────┼───────────────────┼──────────────────┤
+│              assertions │                 8 │                8 │
+├─────────────────────────┴───────────────────┴──────────────────┤
+│ total run duration: 1162ms                                     │
+├────────────────────────────────────────────────────────────────┤
+│ total data received: 10.75kB (approx)                          │
+├────────────────────────────────────────────────────────────────┤
+│ average response time: 8ms [min: 5ms, max: 33ms, s.d.: 8ms]    │
+├────────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 8ms [min: 8ms, max: 8ms, s.d.: 0µs]   │
+├────────────────────────────────────────────────────────────────┤
+│ average first byte time: 3ms [min: 2ms, max: 5ms, s.d.: 851µs] │
+└────────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                                          
+                                                                                                     
+ 1.  JSONError       createAndSetCarParkId                                                           
+                     Unexpected token '<' at 1:1                                                     
+                     <html><head><title>Grizzly 3.0.0</title><style><!--div.header {font-family:Taho 
+                     ^                                                                               
+                     at assertion:0 in test-script                                                   
+                     inside "Create new car park Copy"                                               
+                                                                                                     
+ 2.  AssertionError  createCarType                                                                   
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create car type Copy"                                                   
+                                                                                                     
+ 3.  AssertionError  createParkingSpotWithType                                                       
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create parking spot for given car park and given car park floor Copy"   
+                                                                                                     
+ 4.  AssertionError  createUser                                                                      
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create user Copy"                                                       
+                                                                                                     
+ 5.  AssertionError  createCar                                                                       
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create car Copy"                                                        
+                                                                                                     
+ 6.  AssertionError  createReservation                                                               
+                     expected response to have status code 201 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Create new reservation Copy"                                            
+                                                                                                     
+ 7.  AssertionError  getReservation                                                                  
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Update reservation"                                                     
+                                                                                                     
+ 8.  AssertionError  getReservation                                                                  
+                     expected response to have status code 200 but got 404                           
+                     at assertion:0 in test-script                                                   
+                     inside "Get reservation by id Copy"                                             
+
+-----------------------
+
+updateUser
+
+→ Create user
+  [16. 6. 2022, 12:24:18]  POST http://localhost:8080/users  
+  404 Not Found ★ 33ms time ★ 463B↑ 1.16kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 122B
+  │ {
+  │   "id": -92119638,
+  │   "firstName": "Jozko",
+  │   "lastName": "Mkrvicka",
+  │   "email": "jozo.mrkvicka@stuba.sk",
+  │   "cars": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.06kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/users', does not exist.</div><div class="foot
+  │ er">Grizzly 3.0.0</div></body></html>
+  └
+  prepare   wait   dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  42ms      11ms   3ms          1ms             6ms              9ms        699µs     76ms  
+
+  [12:24:18] 1. createUser
+
+→ Update user
+  [16. 6. 2022, 12:24:18]  PUT http://localhost:8080/users/{{userId}}  
+  404 Not Found ★ 6ms time ★ 471B↑ 1.17kB↓ size ★ 10↑ 2↓ headers ★ 0 cookies
+  ┌ ↑ raw ★ 112B
+  │ {
+  │   "id": {{userId}},
+  │   "firstName": "John",
+  │   "lastName": "Doe",
+  │   "email": "john.doe@stuba.sk",
+  │   "cars": []
+  │ }
+  └ 
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.08kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/users/%7B%7BuserId%7D%7D', does not exist.</d
+  │ iv><div class="footer">Grizzly 3.0.0</div></body></htm
+  │ l>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  2ms       709µs   (cache)      (cache)         2ms              2ms        88µs      7ms   
+
+  [12:24:18] 2. updateUser
+
+→ Get user by id
+  [16. 6. 2022, 12:24:18]  GET http://localhost:8080/users/{{userId}}  
+  404 Not Found ★ 6ms time ★ 306B↑ 1.17kB↓ size ★ 8↑ 2↓ headers ★ 0 cookies
+  ┌ ↓ text/html ★ text ★ html ★ iso-8859-1 ★ 1.08kB
+  │ <html><head><title>Grizzly 3.0.0</title><style><!--div
+  │ .header {font-family:Tahoma,Arial,sans-serif;color:whi
+  │ te;background-color:#003300;font-size:22px;-moz-border
+  │ -radius-topleft: 10px;border-top-left-radius: 10px;-mo
+  │ z-border-radius-topright: 10px;border-top-right-radius
+  │ : 10px;padding-left: 5px}div.body {font-family:Tahoma,
+  │ Arial,sans-serif;color:black;background-color:#FFFFCC;
+  │ font-size:16px;padding-top:10px;padding-bottom:10px;pa
+  │ dding-left:10px}div.footer {font-family:Tahoma,Arial,s
+  │ ans-serif;color:white;background-color:#666633;font-si
+  │ ze:14px;-moz-border-radius-bottomleft: 10px;border-bot
+  │ tom-left-radius: 10px;-moz-border-radius-bottomright: 
+  │ 10px;border-bottom-right-radius: 10px;padding-left: 5p
+  │ x}BODY {font-family:Tahoma,Arial,sans-serif;color:blac
+  │ k;background-color:white;}B {font-family:Tahoma,Arial,
+  │ sans-serif;color:black;}A {color : black;}HR {color : 
+  │ #999966;}--></style> </head><body><div class="header">
+  │ Not Found</div><div class="body">Resource identified b
+  │ y path '/users/%7B%7BuserId%7D%7D', does not exist.</d
+  │ iv><div class="footer">Grizzly 3.0.0</div></body></htm
+  │ l>
+  └
+  prepare   wait    dns-lookup   tcp-handshake   transfer-start   download   process   total 
+  1ms       418µs   (cache)      (cache)         2ms              1ms        69µs      6ms   
+
+  [12:24:18] 3. getUser
+
+┌─────────────────────────┬───────────────────┬─────────────────┐
+│                         │          executed │          failed │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│              iterations │                 1 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│                requests │                 3 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│            test-scripts │                 6 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│      prerequest-scripts │                 3 │               0 │
+├─────────────────────────┼───────────────────┼─────────────────┤
+│              assertions │                 3 │               3 │
+├─────────────────────────┴───────────────────┴─────────────────┤
+│ total run duration: 484ms                                     │
+├───────────────────────────────────────────────────────────────┤
+│ total data received: 3.23kB (approx)                          │
+├───────────────────────────────────────────────────────────────┤
+│ average response time: 15ms [min: 6ms, max: 33ms, s.d.: 12ms] │
+├───────────────────────────────────────────────────────────────┤
+│ average DNS lookup time: 3ms [min: 3ms, max: 3ms, s.d.: 0µs]  │
+├───────────────────────────────────────────────────────────────┤
+│ average first byte time: 4ms [min: 2ms, max: 6ms, s.d.: 1ms]  │
+└───────────────────────────────────────────────────────────────┘
+
+  #  failure         detail                                                
+                                                                           
+ 1.  AssertionError  createUser                                            
+                     expected response to have status code 201 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Create user"                                  
+                                                                           
+ 2.  AssertionError  updateUser                                            
+                     expected response to have status code 200 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Update user"                                  
+                                                                           
+ 3.  AssertionError  getUser                                               
+                     expected response to have status code 200 but got 404 
+                     at assertion:0 in test-script                         
+                     inside "Get user by id"                               
+
+-----------------------
+

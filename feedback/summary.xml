@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><evaluation>
+  <exam>B-VSA 21/22 Semestrálny projekt 2</exam>
+  <student>
+    <group>A</group>
+    <aisId>null</aisId>
+    <name>Boris-Kamenicky</name>
+    <email>null</email>
+  </student>
+  <github>Boris-Kamenicky</github>
+  <testsRuns>
+    <required>
+      <testsRun>
+        <totalRun>152</totalRun>
+        <success>28</success>
+        <failure>124</failure>
+        <skip>0</skip>
+        <points>4</points>
+      </testsRun>
+    </required>
+    <bonus>
+      <testsRun>
+        <totalRun>51</totalRun>
+        <success>8</success>
+        <failure>43</failure>
+        <skip>0</skip>
+        <points>1</points>
+      </testsRun>
+    </bonus>
+  </testsRuns>
+  <totalPoints>5</totalPoints>
+  <notes/>
+  <testDuration>PT2M27.545S</testDuration>
+</evaluation>
